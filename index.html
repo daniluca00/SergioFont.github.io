@@ -1,12 +1,960 @@
----
-layout: default
-title: The title.
----
-<h1>{{site.title}}</h1>        
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<ol class='portada'> 
-  {% for post in site.posts reversed %}
-      <li><h4><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h4></li>
-{% endfor %}
-</ol>
+    <title>Currículum Europass</title>
+    <script type="text/javascript" src="https://europa.eu/europass/eportfolio/api/europass/eportfolio/api/ruxitagentjs_ICA2SVfqru_10205210125143150.js" data-dtconfig="app=19361858b50c0f63|agentId=e562c7adc56149fa|rcdec=1209600000|featureHash=ICA2SVfqru|vcv=2|rdnt=1|uxrgce=1|bp=3|srmcrv=10|cuc=m097nmfl|mel=100000|dpvc=1|ssv=4|lastModification=1634799099788|dtVersion=10205210125143150|srmcrl=1|tp=500,50,0,1|uxdcw=1500|vs=2|agentUri=/europass/eportfolio/api/ruxitagentjs_ICA2SVfqru_10205210125143150.js|reportUrl=/europass/eportfolio/api/rb_39a3e95b-5423-482c-879b-99ef235dffeb|rid=RID_585875766|rpid=-358897418"></script><script type="text/javascript" src="https://europa.eu/europass/eportfolio/api/europass/eportfolio/api/ruxitagentjs_ICA2SVfqru_10205210125143150.js" data-dtconfig="app=19361858b50c0f63|agentId=8197e4cad44d9528|rcdec=1209600000|featureHash=ICA2SVfqru|vcv=2|rdnt=1|uxrgce=1|bp=3|srmcrv=10|cuc=m097nmfl|mel=100000|dpvc=1|ssv=4|lastModification=1634799099788|dtVersion=10205210125143150|srmcrl=1|tp=500,50,0,1|uxdcw=1500|vs=2|agentUri=/europass/eportfolio/api/ruxitagentjs_ICA2SVfqru_10205210125143150.js|reportUrl=/europass/eportfolio/api/rb_39a3e95b-5423-482c-879b-99ef235dffeb|rid=RID_585875766|rpid=1801782735"></script><link rel="stylesheet" type="text/css" href="https://europa.eu/europass/eportfolio/api/eprofile/static/share-profile/css/reboot.css">
+    <link rel="stylesheet" type="text/css" href="https://europa.eu/europass/eportfolio/api/eprofile/static/share-profile/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://europa.eu/europass/eportfolio/api/eprofile/static/share-profile/css/utilities.css">
+    <link rel="stylesheet" type="text/css" href="https://europa.eu/europass/eportfolio/api/eprofile/static/share-profile/css/backup.css">
+    <link rel="stylesheet" type="text/css" href="https://europa.eu/europass/eportfolio/api/eprofile/static/share-profile/css/driving_spritesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://europa.eu/europass/eportfolio/api/eprofile/static/share-profile/css/quill.css">
+    
+</head>
+
+
+
+
+
+
+<body class="break-word">
+<img width="100%" height="100%" src="https://europa.eu/europass/eportfolio/api/eprofile/static/share-profile/images/header.jpg"/>
+<svg aria-hidden="true" hidden version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="icon-car" viewBox="0 0 32 32">
+            <path d="M27.2 12.8h-0.8l-5.44-6.797c-0.608-0.762-1.53-1.203-2.496-1.203h-10.694c-1.306 0-2.483 0.794-2.97 2.010l-2.394 6.099c-1.382 0.358-2.406 1.6-2.406 3.091v5.6c0 0.442 0.358 0.8 0.8 0.8h2.4c0 2.65 2.15 4.8 4.8 4.8s4.8-2.15 4.8-4.8h6.4c0 2.65 2.15 4.8 4.8 4.8s4.8-2.15 4.8-4.8h2.4c0.442 0 0.8-0.358 0.8-0.8v-4c0-2.65-2.15-4.8-4.8-4.8zM8 24.8c-1.325 0-2.4-1.075-2.4-2.4s1.075-2.4 2.4-2.4 2.4 1.075 2.4 2.4-1.075 2.4-2.4 2.4zM11.597 12.8h-5.747l1.92-4.8h3.834v4.8zM14.003 12.8v-4.8h4.461l3.84 4.8h-8.301zM24 24.8c-1.325 0-2.4-1.075-2.4-2.4s1.075-2.4 2.4-2.4 2.4 1.075 2.4 2.4-1.075 2.4-2.4 2.4z"></path>
+        </symbol>
+        <symbol id="icon-chat" viewBox="0 0 32 32">
+            <path d="M29.888 25.286c1.325-1.549 2.112-3.437 2.112-5.478 0-3.981-2.97-7.392-7.181-8.813 0.051 0.39 0.070 0.794 0.070 1.197 0 6.304-5.984 11.43-13.331 11.43-0.602 0-1.184-0.045-1.76-0.115 1.747 3.424 5.862 5.83 10.65 5.83 2.278 0 4.397-0.55 6.182-1.485 1.21 0.755 2.893 1.485 4.928 1.485 0.179 0 0.339-0.115 0.403-0.288 0.070-0.173 0.038-0.378-0.083-0.518-0.019-0.019-1.248-1.44-1.99-3.245zM23.11 12.192c0-5.261-5.171-9.523-11.558-9.523-6.381 0-11.552 4.262-11.552 9.523 0 2.042 0.781 3.923 2.112 5.478-0.742 1.798-1.971 3.226-1.99 3.245-0.122 0.134-0.154 0.333-0.083 0.512s0.23 0.288 0.403 0.288c2.035 0 3.718-0.73 4.928-1.485 1.792 0.934 3.904 1.485 6.182 1.485 6.387 0 11.558-4.262 11.558-9.523z"></path>
+        </symbol>
+        <symbol id="icon-email" viewBox="0 0 32 32">
+            <path d="M16 19.2c1.453 0.026 3.539-1.824 4.589-2.586 8.294-6.022 8.928-6.547 10.835-8.045 0.365-0.282 0.576-0.717 0.576-1.184v-1.184c0-1.658-1.344-3.002-3.002-3.002h-25.997c-1.658 0-3.002 1.344-3.002 3.002v1.184c0 0.461 0.211 0.896 0.576 1.184 1.914 1.491 2.541 2.022 10.835 8.045 1.050 0.762 3.136 2.611 4.589 2.586zM31.392 12.883c0.243-0.192 0.608-0.013 0.608 0.288v12.659c0 1.638-1.344 2.97-3.002 2.97h-25.997c-1.658 0-3.002-1.331-3.002-2.97v-12.653c0-0.307 0.358-0.486 0.608-0.294 1.395 1.082 3.258 2.451 9.632 7.034 1.318 0.954 3.546 2.957 5.76 2.95 2.234 0.019 4.499-2.029 5.766-2.95 6.374-4.582 8.23-5.958 9.626-7.034z"></path>
+        </symbol>
+        <symbol id="icon-link" viewBox="0 0 32 32">
+            <path d="M30.336 27.507l-2.88 2.861c-1.062 1.062-2.496 1.632-3.987 1.632-1.51 0-2.944-0.589-4-1.664l-4.038-4.058c-1.056-1.056-1.626-2.49-1.626-3.981 0-1.549 0.627-3.021 1.728-4.096l-1.728-1.728c-1.082 1.101-2.528 1.728-4.077 1.728-1.491 0-2.944-0.589-4-1.645l-4.077-4.077c-1.082-1.088-1.651-2.502-1.651-4.006 0-1.491 0.608-2.944 1.664-3.981l2.88-2.861c1.062-1.062 2.496-1.632 3.987-1.632 1.51 0 2.944 0.589 4 1.664l4.038 4.058c1.056 1.056 1.626 2.49 1.626 3.981 0 1.549-0.627 3.021-1.728 4.096l1.728 1.728c1.082-1.101 2.528-1.728 4.077-1.728 1.491 0 2.944 0.589 4 1.645l4.077 4.077c1.082 1.088 1.651 2.502 1.651 4.006 0 1.491-0.608 2.944-1.664 3.981zM13.901 8.371l-4.038-4.058c-0.352-0.352-0.845-0.55-1.331-0.55s-0.979 0.198-1.331 0.531l-2.88 2.861c-0.352 0.352-0.55 0.826-0.55 1.312 0 0.512 0.198 0.979 0.55 1.331l4.077 4.077c0.352 0.352 0.845 0.531 1.331 0.531 0.57 0 1.018-0.198 1.414-0.608-0.646-0.646-1.414-1.197-1.414-2.195 0-1.037 0.845-1.882 1.882-1.882 0.998 0 1.549 0.762 2.195 1.414 0.41-0.39 0.646-0.845 0.646-1.434 0-0.486-0.198-0.979-0.55-1.331zM27.686 22.195l-4.077-4.077c-0.352-0.352-0.845-0.55-1.331-0.55-0.57 0-1.018 0.218-1.414 0.627 0.646 0.646 1.414 1.197 1.414 2.195 0 1.037-0.845 1.882-1.882 1.882-0.998 0-1.549-0.762-2.195-1.414-0.41 0.39-0.646 0.845-0.646 1.434 0 0.493 0.198 0.979 0.55 1.331l4.038 4.058c0.352 0.352 0.845 0.531 1.331 0.531s0.979-0.179 1.331-0.512l2.88-2.861c0.352-0.352 0.55-0.826 0.55-1.312 0-0.506-0.198-0.979-0.55-1.331z"></path>
+        </symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 32 32">
+            <path d="M26.669 25.331h-4v-7.469c0-4.493-5.331-4.154-5.331 0v7.475h-4v-14.669h4v2.355c1.862-3.45 9.331-3.706 9.331 3.302v9.005zM8.666 8.973c-1.286 0-2.336-1.050-2.336-2.349s1.043-2.349 2.336-2.349 2.336 1.050 2.336 2.349c0 1.299-1.043 2.349-2.336 2.349zM10.669 25.331h-4v-14.662h4v14.662zM25.331 0h-18.662c-3.686 0-6.669 2.982-6.669 6.669v18.669c0 3.68 2.982 6.662 6.669 6.662h18.669c3.68 0 6.662-2.982 6.662-6.669v-18.662c0-3.686-2.982-6.669-6.669-6.669z"></path>
+        </symbol>
+        <symbol id="icon-motorcycle" viewBox="0 0 32 32">
+            <path d="M25.638 12.8c-0.742-0.006-1.453 0.115-2.118 0.346l-1.645-2.746h4.122c0.666 0 1.197-0.538 1.197-1.197v-1.6c0-0.666-0.538-1.197-1.197-1.197h-2.266c-0.339 0-0.666 0.147-0.89 0.397l-1.875 2.086-1.139-1.901c-0.218-0.365-0.608-0.589-1.030-0.589h-4c-0.442 0-0.8 0.358-0.8 0.8v0.8c0 0.442 0.358 0.8 0.8 0.8h3.322l0.96 1.6h-7.686c-0.883-1.152-2.246-1.997-4.992-1.997h-2.771c-0.672 0-1.242 0.55-1.222 1.222 0.013 0.653 0.544 1.178 1.197 1.178h2.797c1.222 0 1.933 0.544 2.387 1.242l-0.563 1.024c-0.653-0.192-1.344-0.288-2.067-0.262-3.36 0.122-6.074 2.874-6.157 6.24-0.077 3.61 2.816 6.554 6.4 6.554 2.982 0 5.485-2.042 6.202-4.8h4.211c0.685 0 1.229-0.57 1.197-1.254-0.102-2.355 0.877-4.685 2.81-6.246l0.627 1.037c-1.382 1.184-2.253 2.944-2.24 4.909 0.026 3.482 2.861 6.323 6.336 6.355 3.578 0.032 6.49-2.874 6.458-6.458-0.038-3.475-2.88-6.317-6.362-6.342zM6.4 23.2c-2.202 0-4-1.792-4-4s1.792-4 4-4c0.211 0 0.422 0.013 0.627 0.051l-2.074 3.77c-0.442 0.8 0.141 1.779 1.050 1.779h4.064c-0.621 1.408-2.035 2.4-3.667 2.4zM29.587 19.418c-0.109 2.029-1.747 3.667-3.776 3.776-2.304 0.128-4.218-1.715-4.218-3.994 0-1.069 0.422-2.042 1.107-2.752l2.47 4.122c0.224 0.378 0.717 0.499 1.101 0.275l0.685-0.41c0.378-0.224 0.499-0.717 0.275-1.101l-2.432-4.045c0.262-0.058 0.525-0.077 0.794-0.077 2.285-0.013 4.115 1.901 3.994 4.205v0z"></path>
+        </symbol>
+        <symbol id="icon-phone" viewBox="0 0 32 32">
+            <path d="M30.835 1.536l-6.496-1.498c-0.704-0.166-1.434 0.205-1.722 0.87l-3.002 7.002c-0.262 0.614-0.090 1.331 0.429 1.747l3.789 3.098c-2.253 4.794-6.182 8.781-11.072 11.078l-3.098-3.789c-0.422-0.518-1.139-0.691-1.747-0.429l-7.002 2.995c-0.666 0.294-1.037 1.018-0.877 1.728l1.498 6.496c0.16 0.678 0.755 1.165 1.466 1.165 16.006 0 28.998-12.966 28.998-28.998 0-0.704-0.48-1.306-1.165-1.466z"></path>
+        </symbol>
+        <symbol id="icon-pin" viewBox="0 0 32 32">
+            <path d="M16 16.998c2.758 0 4.998-2.24 4.998-4.998s-2.24-4.998-4.998-4.998-4.998 2.24-4.998 4.998 2.24 4.998 4.998 4.998zM14.765 31.354c-9.082-13.165-10.765-14.515-10.765-19.354 0-6.63 5.37-12 12-12s12 5.37 12 12c0 4.838-1.683 6.189-10.765 19.354-0.595 0.864-1.875 0.864-2.47 0z"></path>
+        </symbol>
+        <symbol id="icon-world" viewBox="0 0 32 32">
+            <path d="M1.248 22.195c1.843 4.378 5.581 7.77 10.195 9.139-1.574-2.182-2.656-5.466-3.226-9.139h-6.97zM20.57 31.328c4.608-1.37 8.352-4.755 10.195-9.139h-6.97c-0.563 3.674-1.651 6.957-3.226 9.139zM10.291 22.195c0.934 5.76 3.142 9.805 5.709 9.805s4.774-4.045 5.709-9.805h-11.418zM7.744 16c0-1.389 0.077-2.771 0.211-4.128h-7.398c-0.352 1.318-0.557 2.694-0.557 4.128s0.205 2.81 0.557 4.128h7.392c-0.128-1.357-0.205-2.739-0.205-4.128zM31.45 11.872h-7.398c0.134 1.357 0.211 2.746 0.211 4.128s-0.077 2.771-0.211 4.128h7.392c0.358-1.318 0.557-2.694 0.557-4.128s-0.198-2.81-0.55-4.128zM11.437 0.672c-4.608 1.37-8.352 4.755-10.189 9.133h6.97c0.557-3.667 1.645-6.95 3.219-9.133zM30.758 9.805c-1.843-4.378-5.581-7.763-10.195-9.133 1.574 2.182 2.656 5.466 3.226 9.139h6.97zM9.811 16c0 1.434 0.077 2.81 0.211 4.128h11.955c0.134-1.325 0.211-2.694 0.211-4.128s-0.077-2.81-0.211-4.128h-11.955c-0.134 1.318-0.211 2.694-0.211 4.128zM21.715 9.805c-0.934-5.76-3.142-9.805-5.709-9.805s-4.774 4.045-5.709 9.805h11.418z"></path>
+        </symbol>
+    </defs>
+</svg>
+
+<div class="content"
+     lang="es">
+    <header class="header" role="banner">
+        
+
+        <h1 class="header-title header-title--gradient">
+            <span class="header-title__name">Sergio Font Sabaté</span>
+        </h1>
+
+        
+
+        <hr class="header__separator"/>
+
+        
+        <ul class="inline-list inline-list--center">
+            <li class="inline-list__item">
+                
+    <!-- Non-bold value -->
+    
+    
+        <span class="font-weight-semi-bold">Fecha de nacimiento:</span> 28/02/1999
+    
+    <!-- Bold value -->
+    
+    
+    <!-- Fragment value -->
+    
+    
+
+            </li>
+            <li class="inline-list__item">
+                
+    <!-- Non-bold value -->
+    
+    
+        <span class="font-weight-semi-bold">Género:</span> Masculino
+    
+    <!-- Bold value -->
+    
+    
+    <!-- Fragment value -->
+    
+    
+
+            </li>
+            <li class="inline-list__item">
+                <strong>Nacionalidad</strong>:
+                
+                    
+                        
+    
+        Española
+    
+
+                    
+                
+            </li>
+        </ul>
+
+        <ul class="infos-list">
+            <li class="infos-list__item infos-list__item--full">
+                
+    <svg class="icon icon--md icon--primary icon-phone"
+         aria-hidden="true">
+        <use xlink:href="#icon-phone">
+        </use>
+    </svg>
+
+                
+                    
+    <!-- Non-bold value -->
+    
+    
+    <!-- Bold value -->
+    
+    
+    <!-- Fragment value -->
+    
+    
+         <span class="font-weight-semi-bold">Mobile:</span> 
+    <span>
+        (+34)
+    </span>
+    -
+
+    
+
+                
+            </li>
+            <li class="infos-list__item">
+                
+    <svg class="icon icon--md icon--primary icon-email"
+         aria-hidden="true">
+        <use xlink:href="#icon-email">
+        </use>
+    </svg>
+
+                <strong>Dirección de correo electrónico</strong>:
+                
+                    
+    <a href="mailto:sergiofontsabate@gmail.com">sergiofontsabate@gmail.com</a>
+
+                    
+                
+            </li>
+            
+            
+            
+            <li class="infos-list__item infos-list__item--full">
+                
+    <svg class="icon icon--md icon--primary icon-pin"
+         aria-hidden="true">
+        <use xlink:href="#icon-pin">
+        </use>
+    </svg>
+
+                
+                    
+    <!-- Non-bold value -->
+    
+    
+    <!-- Bold value -->
+    
+    
+    <!-- Fragment value -->
+    
+    
+         <span class="font-weight-semi-bold">Home:</span> 
+    <!-- Address in the following format: `addressPart1 addressPart2, postalCode city, country` -->
+    
+    <span>
+        <span>
+            <!-- 2 spans on the same line to avoid a space being added between them -->
+            -</span><span>,</span>
+    </span><span>
+        <span>
+            <!-- 2 spans on the same line to avoid a space being added between them -->
+            -</span><span>
+            <!-- 2 spans on the same line to avoid a space being added between them -->
+            Castellón de la Plana</span><span>,</span>
+    </span><span>
+        <span>
+            <!-- 2 spans on the same line to avoid a space being added between them -->
+            España</span>
+    </span>
+
+
+    
+
+                
+            </li>
+        </ul>
+    </header>
+
+    <main role="main" class="main" id="content" tabindex="-1">
+        
+            <section>
+                <section class="section">
+    <h2 class="section__title">Experiencia laboral</h2>
+
+    <article class="experience experience--timeline">
+        <h3 class="experience__title experience__title--color">
+            Informático
+        </h3>
+
+        <h4 class="experience__subtitle">
+            Fadrell Grupo Tecnológico
+        </h4>
+
+        <div class="experience__metas"><span>
+    <label>03/2019</label>
+    <span>
+        &ndash;
+    </span>
+    <label>06/2019</label>
+    
+</span></div>
+
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                
+    <svg class="icon icon--md icon--primary icon-pin"
+         aria-hidden="true">
+        <use xlink:href="#icon-pin">
+        </use>
+    </svg>
+
+                <span>
+    <!-- City and country separated by a comma -->
+    
+    
+            Castellón, España
+    
+
+</span>
+            </li>
+            
+            
+        </ul>
+
+        <ul class="inline-list">
+            
+        </ul>
+
+        <ul class="inline-list">
+            
+        </ul>
+        
+
+        <hr/>
+
+        <div class="experience__desc"><p><span style="background-color: transparent;">Montaje y desmontaje de ordenadores de sobremesa y portátiles.</span></p><p><span style="background-color: transparent;">Revisión copias de seguridad de clientes.</span></p><p><span style="background-color: transparent;">Configuración servidores clientes.</span></p><p><span style="background-color: transparent;">Configuración routers CISCO</span></p><p><span style="background-color: transparent;">Instalación y configuración impresoras y escáneres en clientes.</span></p><p><span style="background-color: transparent;">Instalación y configuración Windows Server 2016 (Active Directory).</span></p></div>
+
+        
+    </article>
+
+    <article class="experience experience--timeline">
+        <h3 class="experience__title experience__title--color">
+            Configurador de bases de datos
+        </h3>
+
+        <h4 class="experience__subtitle">
+            Itapli Consulting
+        </h4>
+
+        <div class="experience__metas"><span>
+    <label>03/2021</label>
+    <span>
+        &ndash;
+    </span>
+    <label>06/2021</label>
+    
+</span></div>
+
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                
+    <svg class="icon icon--md icon--primary icon-pin"
+         aria-hidden="true">
+        <use xlink:href="#icon-pin">
+        </use>
+    </svg>
+
+                <span>
+    <!-- City and country separated by a comma -->
+    
+    
+            Castellón, España
+    
+
+</span>
+            </li>
+            
+            
+        </ul>
+
+        <ul class="inline-list">
+            
+        </ul>
+
+        <ul class="inline-list">
+            
+        </ul>
+        
+
+        <hr/>
+
+        <div class="experience__desc"><p>Instalación de Microsoft SQL Server</p><p>Instalación y configuración de TPVs</p><p>Administración de FrontRest (programa de hosteleria)</p><p><br></p></div>
+
+        
+    </article>
+</section>
+            </section>
+            <section>
+                <section class="section">
+    <h2 class="section__title">Educación y formación</h2>
+
+    <article class="experience experience--timeline">
+        <h3 class="experience__title experience__title--color">
+            IES El Caminàs
+        </h3>
+
+        <h4 class="experience__subtitle">
+            Técnico en Sistemas Microinformáticos y Redes
+        </h4>
+
+        <div class="experience__metas"><span>
+    <label>09/2017</label>
+    <span>
+        &ndash;
+    </span>
+    <label>03/2019</label>
+    
+</span></div>
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                
+    <svg class="icon icon--md icon--primary icon-pin"
+         aria-hidden="true">
+        <use xlink:href="#icon-pin">
+        </use>
+    </svg>
+
+                <span>
+    <!-- Address in the following format: `streetAddress.part1, streetAddress.part2, city, country` -->
+    
+    
+            Calle del Pintor Soler, Castellón, España
+    
+
+</span>
+            </li>
+            <li class="inline-list__item">
+                
+    <a href="https://www.ieselcaminas.org"
+       target="_blank"
+       class="break-word">https://www.ieselcaminas.org</a>
+
+            </li>
+        </ul>
+
+        <ul class="inline-list">
+            <li class="inline-list__item inline-list__item--full">
+                Campo(s) de estudio:
+                <strong>
+                    
+                    
+                        
+    
+
+    
+        Tecnologías de la información y la comunicación (TIC)
+    
+
+                    
+                </strong>
+            </li>
+            
+            
+            
+        </ul>
+
+        <ul class="inline-list">
+            
+            
+            
+            
+        </ul>
+
+        
+
+        
+
+        
+    </article>
+
+    <article class="experience experience--timeline">
+        <h3 class="experience__title experience__title--color">
+            IES El Caminàs
+        </h3>
+
+        <h4 class="experience__subtitle">
+            Técnico Superior en Administración de Sistemas Informáticos en Red
+        </h4>
+
+        <div class="experience__metas"><span>
+    <label>09/2019</label>
+    <span>
+        &ndash;
+    </span>
+    <label>03/2021</label>
+    
+</span></div>
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                
+    <svg class="icon icon--md icon--primary icon-pin"
+         aria-hidden="true">
+        <use xlink:href="#icon-pin">
+        </use>
+    </svg>
+
+                <span>
+    <!-- Address in the following format: `streetAddress.part1, streetAddress.part2, city, country` -->
+    
+    
+            Calle del Pintor Soler, Castellón, España
+    
+
+</span>
+            </li>
+            <li class="inline-list__item">
+                
+    <a href="https://www.ieselcaminas.org"
+       target="_blank"
+       class="break-word">https://www.ieselcaminas.org</a>
+
+            </li>
+        </ul>
+
+        <ul class="inline-list">
+            <li class="inline-list__item inline-list__item--full">
+                Campo(s) de estudio:
+                <strong>
+                    
+                    
+                        
+    
+
+    
+        Tecnologías de la información y la comunicación (TIC)
+    
+
+                    
+                </strong>
+            </li>
+            
+            
+            
+        </ul>
+
+        <ul class="inline-list">
+            
+            
+            
+            
+        </ul>
+
+        
+
+        
+
+        
+    </article>
+</section>
+            </section>
+            <section>
+                <section class="section">
+    <h2 class="section__title">Competencias de idiomas</h2>
+
+    <h3 class="section__subtitle">
+        Lengua(s) materna(s)
+    </h3>
+
+    
+        <div class="block-grid">
+            <article class="experience experience--bordered mb-1">
+                <h4 class="experience__title experience__title--color">
+    
+
+    español
+</h4>
+            </article>
+        </div>
+    
+
+    <h3 class="section__subtitle mt-4">
+        Otro(s) idioma(s)
+    </h3>
+
+    
+        
+
+        
+
+        <div class="block-grid">
+            <article class="experience experience--bordered horizontal-ruler-separated language-height mb-1">
+                <h4 class="experience__title experience__title--color">
+    
+
+    inglés
+</h4>
+                    <div>
+    <h5 class="experience__subtitle font-weight-bold">Comprensión auditiva</h5>
+
+    <div class="notation-scale"
+         aria-hidden="true">
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+    </div>
+    <div>B2</div>
+</div>
+
+                    <div>
+    <h5 class="experience__subtitle font-weight-bold">Comprensión lectora</h5>
+
+    <div class="notation-scale"
+         aria-hidden="true">
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+    </div>
+    <div>B2</div>
+</div>
+
+                    <div>
+    <h5 class="experience__subtitle font-weight-bold">Interacción oral</h5>
+
+    <div class="notation-scale"
+         aria-hidden="true">
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+    </div>
+    <div>B2</div>
+</div>
+
+                    <div>
+    <h5 class="experience__subtitle font-weight-bold">Producción oral</h5>
+
+    <div class="notation-scale"
+         aria-hidden="true">
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+    </div>
+    <div>B2</div>
+</div>
+
+                    <div>
+    <h5 class="experience__subtitle font-weight-bold">Expresión escrita</h5>
+
+    <div class="notation-scale"
+         aria-hidden="true">
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+    </div>
+    <div>B2</div>
+</div>
+            </article>
+            <article class="experience experience--bordered horizontal-ruler-separated language-height mb-1">
+                <h4 class="experience__title experience__title--color">
+    
+
+    catalán
+</h4>
+                    <div>
+    <h5 class="experience__subtitle font-weight-bold">Comprensión auditiva</h5>
+
+    <div class="notation-scale"
+         aria-hidden="true">
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+    </div>
+    <div>B2</div>
+</div>
+
+                    <div>
+    <h5 class="experience__subtitle font-weight-bold">Comprensión lectora</h5>
+
+    <div class="notation-scale"
+         aria-hidden="true">
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+    </div>
+    <div>B2</div>
+</div>
+
+                    <div>
+    <h5 class="experience__subtitle font-weight-bold">Interacción oral</h5>
+
+    <div class="notation-scale"
+         aria-hidden="true">
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+    </div>
+    <div>B2</div>
+</div>
+
+                    <div>
+    <h5 class="experience__subtitle font-weight-bold">Producción oral</h5>
+
+    <div class="notation-scale"
+         aria-hidden="true">
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+    </div>
+    <div>B2</div>
+</div>
+
+                    <div>
+    <h5 class="experience__subtitle font-weight-bold">Expresión escrita</h5>
+
+    <div class="notation-scale"
+         aria-hidden="true">
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step notation-scale__step--full">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+        
+    <span class="notation-scale__step">
+    </span>
+
+    </div>
+    <div>B2</div>
+</div>
+            </article>
+        </div>
+
+    
+</section>
+            </section>
+            <section>
+                <section class="section">
+    <h2 class="section__title">Competencias digitales</h2>
+
+    
+    <article class="experience">
+        <h3 class="experience__title">
+            Otros
+        </h3>
+
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                Técnico en administración de sistemas
+            </li>
+        </ul>
+
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                Responsable de informática
+            </li>
+        </ul>
+
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                Técnico en servicios de Internet
+            </li>
+        </ul>
+
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                Técnico en servicios de mensajería electrónica
+            </li>
+        </ul>
+
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                Personal de apoyo y soporte técnico
+            </li>
+        </ul>
+
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                Técnico en tele-asistencia
+            </li>
+        </ul>
+
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                Técnico en administración de base de datos
+            </li>
+        </ul>
+
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                Técnico de redes
+            </li>
+        </ul>
+
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                Supervisor de sistemas
+            </li>
+        </ul>
+
+        <ul class="inline-list">
+            <li class="inline-list__item">
+                Técnico en servicios de comunicaciones
+            </li>
+        </ul>
+    </article>
+</section>
+            </section>
+        
+    </main>
+
+    
+        <div class="p-3 mb-3 report-box">
+                <span><a target="_blank" href="https://europa.eu/european-union/contact/write-to-us_es">Denunciar contenido inadecuado</a></span>
+        </div>
+    
+</div>
+
+<footer class="footer" role="contentinfo">
+    <!-- Footer -->
+</footer>
+
+</body>
+</html>
 

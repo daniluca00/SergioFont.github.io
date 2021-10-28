@@ -1,0 +1,12 @@
+---
+layout: default
+title: The title.
+---
+<h1>{{site.title}}</h1>        
+
+<ol class='portada'> 
+  {% for post in site.posts reversed %}
+      <li><h4><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h4></li>
+{% endfor %}
+</ol>
+
