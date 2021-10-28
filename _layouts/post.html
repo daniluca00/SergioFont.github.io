@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% include postNavigation.html %}
+{% if page.conToc %}
+<h1>{{ page.title }}</h1>
+{% endif %}
+        <div>
+            {% if page.conToc %}
+                {% include toc.html html=content class="atypora-menu" id="menu"%}
+            {% endif %}
+            <div id="menuContainer">
+                {% if page.conToc %}
+                    {% include toc.html html=content class="typora-menu-hidden" id="menuFixed"%}
+                {% endif %}
+                <div class="top-hidden" id="topFixed">
+                    <a class="toogle expanded pull-left js-toolbar-action" aria-label="" href="#"><i class="fas fa-align-justify"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id='content'>
+        {{ content }}
+        </div>
+        {% include postNavigation.html %}
+        
