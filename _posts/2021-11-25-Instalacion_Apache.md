@@ -1,3 +1,14 @@
+---
+typora-copy-images-to: ../assets/img
+typora-root-url: ../
+layout: post
+categories: 
+conToc: true
+title: Configuración básica de Apache
+---
+
+
+
 # Configuración básica de Apache
 
 ## Tarea 1
