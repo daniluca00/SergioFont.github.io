@@ -60,7 +60,7 @@ Entraremos en **/etc/hosts** y añadiremos 2 lineas con:
 
 *127.0.0.1	urdomain.local*
 
-![image-20211125172003780](../assets/img/image-20211125172003780.png)
+![image-20211125172003780](/assets/img/image-20211125172003780.png)
 
 Entraremos dentro de **sites-available**:
 
@@ -74,13 +74,13 @@ sudo mkdir mydomain
 sudo mkdir urdomain
 ```
 
-![image-20211124155235018](../assets/img/image-20211124155235018.png)
+![image-20211124155235018](/assets/img/image-20211124155235018.png)
 
 Creamos el fichero **index.php** en cada uno de ellos con algun contenido que se pueda ver después desde el navegador:
 
 ![image-20211124155454752](../assets/img/image-20211124155454752.png)
 
-![image-20211124164223317](../assets/img/image-20211124164223317.png)
+![image-20211124164223317](/assets/img/image-20211124164223317.png)
 
 Entramos en **sites-available**:
 
@@ -92,7 +92,7 @@ A continuación crearemos el fichero de configuración de los dominios cogiendo 
 sudo cp 000-default.conf mydomain.conf
 sudo cp 000-default.conf urdomain.conf
 ```
-![image-20211124155743959](../assets/img/image-20211124155743959.png)
+![image-20211124155743959](/assets/img/image-20211124155743959.png)
 
 Cambiaremos 2 lineas dentro de ambos ficheros.
 
@@ -101,7 +101,7 @@ Cambiaremos 2 lineas dentro de ambos ficheros.
 DocumentRoot /var/www/html/mydomain
 ```
 
-![image-20211124155954750](../assets/img/image-20211124155954750.png)
+![image-20211124155954750](/assets/img/image-20211124155954750.png)
 
 Habilitamos los sitios con el comando:
 
@@ -112,7 +112,7 @@ sudo a2ensite urdomain
 ```
 
 
-![image-20211124160222270](../assets/img/image-20211124160222270.png)
+![image-20211124160222270](/assets/img/image-20211124160222270.png)
 
 Deshabilitaremos el **000-deafult** para que no nos aparezca su página al ingresar el dominio en el navegador:
 
@@ -122,7 +122,7 @@ sudo a2dissite 000-default
 ```
 
 
-![image-20211124160505773](../assets/img/image-20211124160505773.png)
+![image-20211124160505773](/assets/img/image-20211124160505773.png)
 
 No nos olvidemos de recargar la configuración de Apache con el comando:
 
@@ -133,4 +133,4 @@ sudo systemctl reload apache2
 
 Nos dirigimos al navegador e introducimos las direcciones del dominio puestas en el **/etc/hosts**
 
-![image-20211125165844294](../assets/img/image-20211125165844294.png)
+![image-20211125165844294](/assets/img/image-20211125165844294.png)
