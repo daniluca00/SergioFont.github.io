@@ -60,7 +60,7 @@ Entraremos en **/etc/hosts** y añadiremos 2 lineas con:
 
 *127.0.0.1	urdomain.local*
 
-![image-20211125172003780](/assets/img/image-20211125172003780.png)
+![image-20211125172003780](../assets/img/image-20211125172003780.png)
 
 Entraremos dentro de **sites-available**:
 
