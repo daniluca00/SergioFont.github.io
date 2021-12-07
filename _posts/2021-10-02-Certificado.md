@@ -4,7 +4,7 @@ typora-root-url: ../
 layout: post
 categories:
 conToc: true
-title: Configuración básica de Apache II
+title: Instalación de un certificado digital en Apache
 ---
 
 # Instalación de un certificado digital en Apache
